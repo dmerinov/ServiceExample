@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                 val scheduler = Executors.newScheduledThreadPool(1)
                 scheduler.scheduleAtFixedRate({
                     startService(intent)
-                }, 0, 5, TimeUnit.SECONDS)
+                }, 2, 10, TimeUnit.SECONDS)
 
             }
         }
